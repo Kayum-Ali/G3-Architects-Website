@@ -5,3 +5,22 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
+header{
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+.menubar{
+    display: flex;
+    justify-content: space-between;
+}
+.menubar > ul{
+    display: flex;
+}
+.menubar li {
+    list-style-type: none;
+    margin-right: 30px;
+    font-size: 18px;
+}
+.menubar li a{
+    text-decoration: none;
+}
