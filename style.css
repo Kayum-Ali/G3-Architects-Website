@@ -150,11 +150,12 @@ header {
 .facts-description {
     width: 33rem;
     margin: 1.25rem 0 5rem 0;
+    color: #727272;
 }
 
 .facts-card-container {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: .75rem;
     justify-content: space-around;
     margin-bottom: 2rem;
@@ -168,7 +169,7 @@ header {
 
 .card img {
     padding: 2.8rem 4rem 0.75rem;
-    
+
 }
 
 .card-stats {
@@ -180,8 +181,33 @@ header {
 
 .card-title {
     padding: 0 2rem 3rem;
-    color:  #727272;
+    color: #727272;
     font-weight: 600;
+}
+
+/* -----sponsor style */
+
+
+.sponsor-title {
+    color:  #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-align: center;
+   
+}
+.spn-des{
+    width: 70%;
+    margin: 1.5rem auto;
+}
+.sponsor-img-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2.8rem auto 4rem;
+}
+
+.sponsor-img-container img{
+   width: 7rem;
+   gap: 2rem;
 }
 
 
@@ -199,8 +225,7 @@ header {
     }
 
     nav,
-    .team-container
-     {
+    .team-container, .sponsor-img-container {
         flex-direction: column;
     }
 
@@ -208,7 +233,8 @@ header {
         margin-top: 1rem;
     }
 
-    .team-img, .facts-card-container {
+    .team-img,
+    .facts-card-container {
         grid-template-columns: 1fr;
         width: 100%;
     }
@@ -218,11 +244,21 @@ header {
         margin-top: 1rem;
         padding: 0 1rem;
     }
+
     .facts-description {
         width: 100%;
         margin: 1.25rem 0 5rem 0;
     }
- 
+    .spn-des{
+        width: 90%;
+    }
+    .sponsor-img-container img{
+       width: 12rem;
+    
+     display: block;
+     margin: 2rem auto;
+     }
+
 }
 
 /* medium device */
@@ -233,11 +269,12 @@ header {
     }
 
     nav,
-    .team-container {
+    .team-container, .sponsor-img-container {
         flex-direction: column;
     }
 
-    .team-img, .facts-card-container {
+    .team-img,
+    .facts-card-container {
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
     }
@@ -248,5 +285,12 @@ header {
         padding: 0 1.5rem;
         text-align: center;
     }
+    .sponsor-img-container img{
+        width: 20rem;
+     
+      display: block;
+      margin: 2rem auto;
+      }
+ 
 
 }
