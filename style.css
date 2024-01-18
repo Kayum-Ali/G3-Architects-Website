@@ -1,26 +1,115 @@
-*{
-    
-font-family: 'Work Sans', sans-serif;
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+/* shared style */
+* {
+
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-header{
+
+.btn-primary {
+    border-radius: 0.5rem;
+    background: #FF900E;
+    padding: 1.25rem 1.50rem;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* header style */
+header {
     background: rgba(255, 144, 14, 0.10);
-    padding: 50px 240px;
+    padding: 3.125rem 9.375rem;
 }
-.menubar{
+
+.menubar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-.menubar > ul{
+
+.nav-title {
+    color: #131313;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+
+}
+
+.menubar>ul {
     display: flex;
 }
+
 .menubar li {
     list-style-type: none;
-    margin-right: 30px;
-    font-size: 18px;
+    margin-right: 1.25rem;
+    font-weight: 500;
 }
-.menubar li a{
+
+.menubar li a {
     text-decoration: none;
+    color: #424242;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+/* banner area style  */
+.banner-content {
+    max-width: 28rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner-title {
+    /* font-size: 3.75rem; */
+    margin-top: 3.75rem;
+    font-weight: 700;
+    color: #131313;
+}
+
+.banner-description {
+    margin: 30px 0px;
+}
+
+.banner-img {
+    margin-top: 3rem;
+    width: 100%;
+}
+
+
+/* responsive style */
+
+
+/* mobile device */
+@media screen and (max-width: 576px) {
+        header{
+            padding: 1.25rem;
+        }
+        nav{
+            flex-direction: column;
+        }
+        nav ul{
+            margin-top: 1rem;
+        }
+}
+
+/* medium device */
+
+@media screen and (min-width: 577px) and (max-width: 960px) {
+    header{
+        padding: 3rem;
+    }
+    nav{
+        flex-direction: column;
+    }
+   
 }
